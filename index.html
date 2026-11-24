@@ -121,14 +121,14 @@
   </svg>
   <div class="wrap">
     <p class="byline">Cybersecurity A | Student project</p>
-    <h1 id="siteTitle">REPLACE: Your Site Title</h1>
+    <h1 id="siteTitle">AI deepfakes and DNS cache poisoning</h1>
     <!-- Use your first name or an alias. Do NOT put your last name, school name, photos of yourself, phone, or address on a public site. -->
-    <p class="byline">By <strong>REPLACE: first name or alias</strong></p>
+    <p class="byline">By <strong>guniw</strong></p>
     <ul class="chips">
-      <li><b>Ethics topic:</b> REPLACE (example: Responsible disclosure)</li>
-      <li><b>Attack topic:</b> REPLACE (example: Phishing)</li>
+      <li><b>Ethics topic:</b> AI impersonation and deepfakes</li>
+      <li><b>Attack topic:</b> DNS cache poisoning</li>
       <li><b>Security+ objective:</b> REPLACE (example: 2.2)</li>
-      <li><b>Control type:</b> REPLACE (preventive, detective, corrective, or deterrent)</li>
+      <li><b>Control type:</b> preventitive</li>
     </ul>
   </div>
 </header>
@@ -137,7 +137,7 @@
 
   <section class="card" id="intro">
     <h2>Introduction</h2>
-    <p>REPLACE: In 3-4 sentences, tell visitors what your site covers (your ethics topic and your attack topic) and why both matter to everyday people such as students, families, and businesses.</p>
+    <p>This matters because the internet has become a big part of our lives and AI and deepfakes are becoming more prevalent and dangerous. DNS cache poisoning is important to prevent because DNS servrs are what keep sthe internet running.</p>
     <div class="keyidea"><strong>Key idea in one sentence:</strong> REPLACE</div>
   </section>
 
@@ -213,7 +213,7 @@
     <h2>Sources</h2>
     <p>List at least <strong>6 sources</strong>: 3 for your ethics topic and 3 for your attack and protection topic. Include the creator of any image that is not your own. Write in your own words. Copying is plagiarism.</p>
     <ol class="sources" id="sourceList">
-      <li>REPLACE: Ethics source 1. Organization or author. "Title of page." Website name. Date accessed. <a href="https://example.com">link</a></li>
+      <li>REPLACE: Ethics source 1. The Gaurdian. "Three men charged in US with uisng Ai to impersonate CEOs and steal millions" thegaurdian.com acessed 11/12. <a href="Three men charged in US with using AI to impersonate CEOs and steal millions | US news | The Guardian ">link</a></li>
       <li>REPLACE: Ethics source 2</li>
       <li>REPLACE: Ethics source 3</li>
       <li>REPLACE: Attack and protection source 1</li>
@@ -246,17 +246,17 @@ const PROJECT = {
   // The story of your attack, in order. Use phase "attack" (red) or "defense" (green).
   // Include at least 3 attack steps and at least 1 defense step.
   steps: [
-    { phase: "attack",  title: "REPLACE: Step 1 title", text: "REPLACE: what the attacker does first." },
-    { phase: "attack",  title: "REPLACE: Step 2 title", text: "REPLACE: what happens next." },
-    { phase: "attack",  title: "REPLACE: Step 3 title", text: "REPLACE: the damage if nothing stops it." },
-    { phase: "defense", title: "REPLACE: Protection title", text: "REPLACE: where the patch or protection stops the attack." }
+    { phase: "attack",  title: "impersonation", text: "Impersonating a DNS name server and giving wrong IP address to DNS server.." },
+    { phase: "attack",  title: "forging reply", text: "Forging reply when DNS server queries a name server" },
+    { phase: "attack",  title: "Wrong", text: "DNS server gives user wrong IP address" },
+    { phase: "defense", title: "DNSSEC", text: "When the attacker tries to imitate a nameserver it doesn't have the required key." }
   ],
 
   // Three things a student can do today.
   todo: [
-    "REPLACE: action 1",
-    "REPLACE: action 2",
-    "REPLACE: action 3"
+    "Use a UDP SPR to make it harder for someone to guess the query parameters",
+    "Have a TCP to limit the queries when things are suspicious.",
+    "DNS query result screening to eliminate any threats"
   ],
 
   // Two Security+ style questions. "answer" is the number of the right option, starting at 0 (A=0, B=1, C=2, D=3).
